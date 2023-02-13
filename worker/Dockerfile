@@ -1,0 +1,9 @@
+FROM node:lts-alpine AS base
+RUN npm i -g pnpm 
+
+FROM base
+WORKDIR '/app'
+COPY ./package.json ./
+RUN pnpm install
+COPY . .
+CMD ["pnpm", "start"]

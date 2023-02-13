@@ -1,0 +1,15 @@
+{
+    "type": "module",
+    "dependencies": {
+        "express": "*",
+        "pg": "*",
+        "ioredis": "*",
+        "cors": "*",
+        "nodemon": "*",
+        "body-parser": "*"
+    },
+    "scripts": {
+        "dev": "nodemon",
+        "start": "node index.js"
+    }
+}
